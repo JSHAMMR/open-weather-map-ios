@@ -20,6 +20,8 @@
 		DCFE7A1D24B0D9E700E66DBE /* WeatherModelDecoderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7A1C24B0D9E700E66DBE /* WeatherModelDecoderTest.swift */; };
 		DCFE7A1F24B0DC2F00E66DBE /* WeatherNetworkTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7A1E24B0DC2F00E66DBE /* WeatherNetworkTest.swift */; };
 		DCFE7A2124B0DC7600E66DBE /* NetworkLayerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7A2024B0DC7600E66DBE /* NetworkLayerMock.swift */; };
+		DCFE7A2424B0E4DD00E66DBE /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7A2324B0E4DD00E66DBE /* WeatherViewModel.swift */; };
+		DCFE7A2624B0E63500E66DBE /* WeatherViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFE7A2524B0E63500E66DBE /* WeatherViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		DCFE7A1C24B0D9E700E66DBE /* WeatherModelDecoderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModelDecoderTest.swift; sourceTree = "<group>"; };
 		DCFE7A1E24B0DC2F00E66DBE /* WeatherNetworkTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherNetworkTest.swift; sourceTree = "<group>"; };
 		DCFE7A2024B0DC7600E66DBE /* NetworkLayerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayerMock.swift; sourceTree = "<group>"; };
+		DCFE7A2324B0E4DD00E66DBE /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
+		DCFE7A2524B0E63500E66DBE /* WeatherViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +132,7 @@
 				DCFE7A1C24B0D9E700E66DBE /* WeatherModelDecoderTest.swift */,
 				DCFE7A1E24B0DC2F00E66DBE /* WeatherNetworkTest.swift */,
 				DCFE7A2024B0DC7600E66DBE /* NetworkLayerMock.swift */,
+				DCFE7A2524B0E63500E66DBE /* WeatherViewModelTests.swift */,
 			);
 			path = OpenWeatherMapTests;
 			sourceTree = "<group>";
@@ -144,6 +149,7 @@
 		DCFE7A1224B0D39400E66DBE /* Weather */ = {
 			isa = PBXGroup;
 			children = (
+				DCFE7A2224B0E4BE00E66DBE /* View Model */,
 				DCFE7A1724B0D49400E66DBE /* Utils */,
 				DCFE7A1624B0D48C00E66DBE /* Network */,
 				DCFE7A1524B0D47900E66DBE /* Model */,
@@ -173,6 +179,14 @@
 				DCFE7A1824B0D4A500E66DBE /* Constants.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		DCFE7A2224B0E4BE00E66DBE /* View Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCFE7A2324B0E4DD00E66DBE /* WeatherViewModel.swift */,
+			);
+			path = "View Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +324,7 @@
 				DCFE7A1924B0D4A500E66DBE /* Constants.swift in Sources */,
 				DCFE7A1424B0D3E100E66DBE /* Weather.swift in Sources */,
 				DCFE7A1B24B0D69E00E66DBE /* Network.swift in Sources */,
+				DCFE7A2424B0E4DD00E66DBE /* WeatherViewModel.swift in Sources */,
 				DCFE79E724B0D10C00E66DBE /* ViewController.swift in Sources */,
 				DCFE79E324B0D10C00E66DBE /* AppDelegate.swift in Sources */,
 				DCFE79E524B0D10C00E66DBE /* SceneDelegate.swift in Sources */,
@@ -321,6 +336,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCFE7A1D24B0D9E700E66DBE /* WeatherModelDecoderTest.swift in Sources */,
+				DCFE7A2624B0E63500E66DBE /* WeatherViewModelTests.swift in Sources */,
 				DCFE7A1F24B0DC2F00E66DBE /* WeatherNetworkTest.swift in Sources */,
 				DCFE7A2124B0DC7600E66DBE /* NetworkLayerMock.swift in Sources */,
 			);
