@@ -8,10 +8,13 @@
 
 import Foundation
 open class Network: NSObject {
-    func getWeather(city:String, completion:@escaping (Weather?) -> Void)  {
+    open func getWeather(city:String, completion:@escaping (Weather?) -> Void)  {
         let parameters  = "?q=\(city)&appid=\(API_Key)"
 
         guard let getUrl = URL(string: openWeatherMapLink + parameters) else { return }
+        
+        
+        print(getUrl)
         
         let session = URLSession(configuration: URLSessionConfiguration.default)
         let dataTask = session.dataTask(with: getUrl) { (data, response, error) in

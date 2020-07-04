@@ -9,7 +9,7 @@
 import Foundation
 
 // MARK: - Weather
-class Weather: Codable {
+public class Weather: Codable {
     let coord: Coord?
     let weather: [WeatherElement]?
     let base: String?

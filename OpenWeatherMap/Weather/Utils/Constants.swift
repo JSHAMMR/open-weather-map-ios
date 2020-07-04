@@ -7,5 +7,5 @@
 //
 
 import Foundation
-public let openWeatherMapLink =  "http://api.openweathermap.org/data/2.5/weathe"
+public let openWeatherMapLink =  "http://api.openweathermap.org/data/2.5/weather"
 public let API_Key = "1da6712886d3a48b9ff4fe48895916c6"
