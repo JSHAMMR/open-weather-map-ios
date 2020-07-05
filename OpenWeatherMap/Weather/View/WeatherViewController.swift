@@ -28,6 +28,8 @@ class WeatherViewController: UIViewController {
         
         self.weatherProvider.weatherPresenter = self.weatherPresenter // to update  list
         
+
+        
     }
     
     //mapping presnter->viewmodel->network
@@ -62,7 +64,18 @@ class WeatherViewController: UIViewController {
 extension WeatherViewController:WeatherPresenterDelegate {
     func didFetchWeather(success: Bool) {
         DispatchQueue.main.async {
-                   self.tableview.reloadData()
+            self.tableview.reloadData()
+
+            let oahuCenter = CLLocationCoordinate2D(latitude: (self.weatherPresenter.getWeather().coord?.lat)!, longitude: (self.weatherPresenter.getWeather().coord?.lon)!)
+
+            let region = MKCoordinateRegion(center: oahuCenter, latitudinalMeters: 20000, longitudinalMeters: 20000)
+            self.mapView.setRegion(region, animated: false)
+
+            self.mapView.setCameraBoundary(
+            MKMapView.CameraBoundary(coordinateRegion: region),
+            animated: true)
+               
+
         }
     }
     
