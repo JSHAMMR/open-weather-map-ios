@@ -9,7 +9,7 @@
 import Foundation
 open class Network: NSObject {
     open func getWeather(city:String, completion:@escaping (Weather?) -> Void)  {
-        let parameters  = "?q=\(city)&appid=\(API_Key)"
+        let parameters  = "?q=\(city.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)!)&appid=\(API_Key)"
 
         guard let getUrl = URL(string: openWeatherMapLink + parameters) else { return }
         
