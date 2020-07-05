@@ -75,7 +75,6 @@ class WeatherPresenterTest: XCTestCase {
             let weatherPresenter = WeatherPresenter(weatherViewModel: viewModel)
 
             weatherPresenter.fetchWeather(city: "London")
-            weatherPresenter.getWeather()
 
             XCTAssertEqual(weatherPresenter.getWeather().id , 2643743, "Failed to return the expected id of weather")
             XCTAssertEqual(weatherPresenter.getWeather().name,"London" , "Failed to return the expected name of weather")
