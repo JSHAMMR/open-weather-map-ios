@@ -16,11 +16,12 @@ class WeatherProvider: NSObject, UITableViewDelegate, UITableViewDataSource {
     var weatherPresenter:WeatherPresenter! //to feed presenter
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return weatherPresenter.getWeatherCount()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherTableViewCell", for: indexPath) as! WeatherTableViewCell
+        
         
         cell.weather = weatherPresenter.getWeather()
         return cell
