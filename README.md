@@ -6,6 +6,10 @@
 
   - SOLID Arch
   - MVVMP UI Pattern
+  - Unit Test 
+  - Integration Test 
+  - End to End Test
+  - CI/CD
   - Easy to test and easy to extend
 
 ### Tech
