@@ -18,8 +18,7 @@ class WeatherTableViewCell: UITableViewCell {
 
     var weather:Weather!{
         didSet {
-            mainLbl.text = weather.weather?.first?.main ?? ""
-            descriptionLbl.text = weather.weather?.first?.weatherDescription ?? ""
+            mainLbl.text = "\(weather.weather?.first?.main ?? "") , \(weather.weather?.first?.weatherDescription ?? "")"
             
             tempLbl.text = "\(weather.main?.temp as! Double ?? 0.0)"
             pressureLbl.text =  "\(weather.main?.pressure as! Int ?? 0)"
