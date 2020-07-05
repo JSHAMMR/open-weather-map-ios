@@ -21,7 +21,7 @@ class WeatherPresenter: NSObject {
     weak var delegate: WeatherPresenterDelegate?
     private let weatherViewModel: WeatherViewModel!// getting view model
     
-    fileprivate var weather: Weather!
+    fileprivate var weather: Weather?
 
     init(weatherViewModel:WeatherViewModel) { // init view mode
         self.weatherViewModel = weatherViewModel
@@ -34,7 +34,15 @@ class WeatherPresenter: NSObject {
     }
     
     public func getWeather() -> Weather { 
-        return self.weather
+        return self.weather!
+    }
+    
+    public func getWeatherCount () -> Int {
+        if self.weather != nil {
+            return 1
+        }
+        
+        return 0
     }
     
     
