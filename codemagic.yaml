@@ -11,6 +11,6 @@ workflows:
             xcode: latest
             cocoapods: default
         scripts:
-            - xcodebuild build -workspace OpenWeatherMap.xcodeproj -scheme "OpenWeatherMap" CODE_SIGN_IDENTITY="iPhone Developer: Jamil Shamar (27Q77W5DP8)" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+            - xcodebuild build -workspace OpenWeatherMap.xcodeproj -scheme "OpenWeatherMap" CODE_SIGN_IDENTITY="Apple Development" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
         artifacts:
             - $HOME/Library/Developer/Xcode/DerivedData/**/Build/**/*.app
